@@ -1,0 +1,45 @@
+.header{
+    justify-content: flex-start;
+}
+
+.pokemon{
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(5, 1fr);
+    gap: 1em 3em;
+}
+
+.pokemon-image{
+    grid-area: 2 / 1 / -1 / 1;
+    position: initial;
+}
+
+.pokemon-data{
+    grid-area: 1 / 2 / -1 / -1;
+}
+
+.pokemon-data{
+    grid-template-columns: repeat(2,1fr);
+}
+
+.pokemon-data-item{
+    grid-template-columns: repeat(1,1fr);
+    justify-items: center;
+    margin: 0;
+}
+
+
+.pokemon-data-item-title{
+    margin: 0;
+    align-self: end;
+    font-size: 1.3em;
+}
+
+.pokemon-data-item-value{
+    margin: 0;
+    align-self: start;
+    font-size: 1.7em;
+}
+
+.others{
+    grid-template-columns: repeat(6, 5em);
+}

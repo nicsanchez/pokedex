@@ -1,0 +1,145 @@
+*{
+    font-family: 'Roboto', sans-serif;
+}
+
+body{
+    margin: 0;
+    display: grid;
+    min-height: 100vh;
+    background-color: var(--soft-pink);
+    grid-template-rows: auto 1fr auto;
+    grid-template-areas:
+        "header"
+        "main"
+        "footer";
+    gap: 1em;
+}
+
+html{
+    font-size: 16px;
+}
+
+:root{
+    --dark-blue: #1675d4;
+    --white: #ffffff;
+    --soft-pink: #f8ced2;
+    --soft-gray: #4d4949;
+    --soft-aquamarine: #7fd5d8;
+    --dark-aquamarine: #26b6bb;
+}
+
+.header{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: var(--white);
+    background-color: var(--dark-blue);
+    padding: 0 15px;
+    grid-area: header;
+}
+
+.header-title{
+    font-size: 1em;
+}
+
+.header-icon {
+    max-width: 1.5em;
+    max-height: 1.5em;
+}
+
+.pokemon{
+    display: grid;
+    width: 70%;
+    align-self: center;
+    background-color: var(--soft-pink);
+    grid-area: main;
+    justify-self: center;
+}
+
+.pokemon-name{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: var(--white);
+    color: var(--dark-blue);
+    border-radius: 0.5em;
+}
+
+.pokemon-name-icon{
+    max-width: 1.7em;
+    max-height: 1.7em;
+    margin: 0 5px;
+}
+
+.pokemon-name-title{
+    font-size: 1.7em;
+    margin: 5px 0;
+}
+
+.pokemon-image{
+    width: 100%;
+    position: relative;
+    z-index: 2;
+    top: 2em;
+    align-self:center; 
+}
+
+.pokemon-data{
+    background-color: var(--white);
+    border-radius: 0.5em;
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+    margin-bottom: 1em;
+    box-shadow: 1em 1em grey;
+    padding: 2em 0;
+}
+
+.pokemon-data-item{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    align-items: center;
+    margin: 0px 20px
+}
+
+.pokemon-data-item-title{
+    font-size: 1em;
+    color: var(--dark-blue);
+}
+
+.pokemon-data-item-value{
+    color: var(--soft-gray);
+}
+
+.others{
+    display: grid;
+    grid-template-columns: repeat(2, 75px);
+    gap: 10px 40px;
+    justify-content: center;
+    align-items: center;
+    justify-items: center;
+    background-color: var(--white);
+    grid-area: footer;
+    padding: 1em;
+}
+
+.others-title{
+    color: var(--dark-blue);
+    font-size: 1.2em;
+    grid-column: span 2;
+}
+
+.others-list-image{
+    max-width: 100%;
+}
+
+.others-list-button{
+    border-radius: 1.7em;
+    border-style: none;
+    align-self: stretch;
+    background-color: var(--soft-aquamarine);
+}
+
+.others-list-button:hover{
+    background-color: var(--dark-aquamarine);
+    cursor: pointer;
+}
