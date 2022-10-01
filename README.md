@@ -1,2 +1,2 @@
 # pokedex
-Pokedex implementada con HTML Semántico, Mobile First, diseño orientado a SEO
+Pokedex implementada con HTML Semántico, Mobile First y diseño orientado a SEO
