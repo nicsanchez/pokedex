@@ -7,56 +7,64 @@
     <meta name="description" content="Enciclopedia electrónica portátil que los entrenadores Pokémon llevan consigo para registrar automáticamente las fichas de todas las diversas especies Pokémon vistas y capturadas durante su viaje como entrenadores"/>
     <meta name="author" content="David Nicolás Sánchez Sendoya" />
     <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="./assets/css/MobileStyles.css">
-    <link rel="stylesheet" href="./assets/css/TabletStyles.css" media="screen and (min-width:750px)">
-    <link rel="stylesheet" href="./assets/css/DesktopStyles.css" media="screen and (min-width:1680px)">
+    <link rel="stylesheet" href="./assets/css/mobile-styles.css">
+    <link rel="stylesheet" href="./assets/css/tablet-styles.css" media="screen and (min-width:750px)">
+    <link rel="stylesheet" href="./assets/css/desktop-styles.css" media="screen and (min-width:1680px)">
     <title>Pokédex</title>
     <link rel="icon" type="image/x-icon" href="./assets/img/favicon.ico">
 </head>
 <body>
   <header class="header">
-    <img class="header-icon" src="./assets/img/icono.svg" alt="Icono de pokébola">
-    <h1 class="header-title">POKÉDEX_</h1>
+    <img class="header__icon" src="./assets/img/icono.svg" alt="Icono de pokébola">
+    <h1 class="header__title">POKÉDEX_</h1>
   </header>
   <main class="pokemon">
-    <div class="pokemon-name">
-        <img class="pokemon-name-icon" src="./assets/img/fuego.png" alt="Imagen que representa el tipo de pokemon">
-        <h2 class="pokemon-name-title">CHARIZARD</h2>
+    <div class="pokemon__title">
+        <img class="pokemon__icon" src="./assets/img/fuego.png" alt="Imagen que representa el tipo de pokemon">
+        <h2 class="pokemon__text">CHARIZARD</h2>
     </div>
-    <img class="pokemon-image" src="./assets/img/pokemones/charizard.png" alt="Imagen de pokemón charizard">
-    <section class="pokemon-data">
-        <div class="pokemon-data-item">
-            <h3 class="pokemon-data-item-title">NO.</h3>
-            <p class="pokemon-data-item-value">006</p>
+    <img class="pokemon__image" src="./assets/img/pokemones/charizard.png" alt="Imagen de pokemón charizard">
+    <section class="pokemon__card">
+        <div class="pokemon__item">
+            <h3 class="pokemon__property">NO.</h3>
+            <p class="pokemon__value">006</p>
         </div>
-        <div class="pokemon-data-item">
-            <h3 class="pokemon-data-item-title">LEVEL</h3>
-            <p class="pokemon-data-item-value">100</p>
+        <div class="pokemon__item">
+            <h3 class="pokemon__property">LEVEL</h3>
+            <p class="pokemon__value">100</p>
         </div>
-        <div class="pokemon-data-item">
-            <h3 class="pokemon-data-item-title">TYPE</h3>
-            <p class="pokemon-data-item-value">FIRE</p>
+        <div class="pokemon__item">
+            <h3 class="pokemon__property">TYPE</h3>
+            <p class="pokemon__value">FIRE</p>
         </div>
-        <div class="pokemon-data-item">
-            <h3 class="pokemon-data-item-title">HABILITY</h3>
-            <p class="pokemon-data-item-value">FLAMES</p>
+        <div class="pokemon__item">
+            <h3 class="pokemon__property">HABILITY</h3>
+            <p class="pokemon__value">FLAMES</p>
         </div>
-        <div class="pokemon-data-item">
-            <h3 class="pokemon-data-item-title">HEIGHT</h3>
-            <p class="pokemon-data-item-value">1.7 m</p>
+        <div class="pokemon__item">
+            <h3 class="pokemon__property">HEIGHT</h3>
+            <p class="pokemon__value">1.7 m</p>
         </div>
-        <div class="pokemon-data-item">
-            <h3 class="pokemon-data-item-title">WEIGHT</h3>
-            <p class="pokemon-data-item-value">90,5 Kg</p>
+        <div class="pokemon__item">
+            <h3 class="pokemon__property">WEIGHT</h3>
+            <p class="pokemon__value">90,5 Kg</p>
         </div>
     </section>
   </main>
   <footer class="others">
-    <h2 class="others-title">OTHERS</h2>
-    <button class="others-list-button"><img class="others-list-image" src="./assets/img/pokemones/jiggly.png" alt="Imagen del pokemón jiggly"></button>
-    <button class="others-list-button"><img class="others-list-image" src="./assets/img/pokemones/umbreon.png" alt="Imagen del pokemón pikachu"></button>
-    <button class="others-list-button"><img class="others-list-image" src="./assets/img/pokemones/solgaleo.png" alt="Imagen del pokemón solgaleo"></button>
-    <button class="others-list-button"><img class="others-list-image" src="./assets/img/pokemones/venusaur.png" alt="Imagen del pokemón venusaur"></button>
+    <h2 class="others__title">OTHERS</h2>
+    <button class="others__button">
+        <img class="others__image" src="./assets/img/pokemones/jiggly.png" alt="Imagen del pokemón jiggly">
+    </button>
+    <button class="others__button">
+        <img class="others__image" src="./assets/img/pokemones/umbreon.png" alt="Imagen del pokemón pikachu">
+    </button>
+    <button class="others__button">
+        <img class="others__image" src="./assets/img/pokemones/solgaleo.png" alt="Imagen del pokemón solgaleo">
+    </button>
+    <button class="others__button">
+        <img class="others__image" src="./assets/img/pokemones/venusaur.png" alt="Imagen del pokemón venusaur">
+    </button>
   </footer>  
 </body>
 </html>

@@ -38,11 +38,11 @@ html{
     grid-area: header;
 }
 
-.header-title{
+.header__title{
     font-size: 1em;
 }
 
-.header-icon {
+.header__icon {
     max-width: 1.5em;
     max-height: 1.5em;
 }
@@ -56,27 +56,27 @@ html{
     justify-self: center;
 }
 
-.pokemon-name{
+.pokemon__title{
     display: flex;
     justify-content: center;
     align-items: center;
     background-color: var(--white);
-    color: var(--dark-blue);
     border-radius: 0.5em;
 }
 
-.pokemon-name-icon{
+.pokemon__icon{
     max-width: 1.7em;
     max-height: 1.7em;
     margin: 0 5px;
 }
 
-.pokemon-name-title{
+.pokemon__text{
     font-size: 1.7em;
     margin: 5px 0;
+    color: var(--dark-blue);
 }
 
-.pokemon-image{
+.pokemon__image{
     width: 100%;
     position: relative;
     z-index: 2;
@@ -84,7 +84,7 @@ html{
     align-self:center; 
 }
 
-.pokemon-data{
+.pokemon__card{
     background-color: var(--white);
     border-radius: 0.5em;
     display: grid;
@@ -94,19 +94,19 @@ html{
     padding: 2em 0;
 }
 
-.pokemon-data-item{
+.pokemon__item{
     display: grid;
     grid-template-columns: repeat(2, 1fr);
     align-items: center;
     margin: 0px 20px
 }
 
-.pokemon-data-item-title{
+.pokemon__property{
     font-size: 1em;
     color: var(--dark-blue);
 }
 
-.pokemon-data-item-value{
+.pokemon__value{
     color: var(--soft-gray);
 }
 
@@ -122,24 +122,24 @@ html{
     padding: 1em;
 }
 
-.others-title{
+.others__title{
     color: var(--dark-blue);
     font-size: 1.2em;
     grid-column: span 2;
 }
 
-.others-list-image{
+.others__image{
     max-width: 100%;
 }
 
-.others-list-button{
+.others__button{
     border-radius: 1.7em;
     border-style: none;
     align-self: stretch;
     background-color: var(--soft-aquamarine);
 }
 
-.others-list-button:hover{
+.others__button:hover{
     background-color: var(--dark-aquamarine);
     cursor: pointer;
 }
